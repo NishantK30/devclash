@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel-7: Stock prediction</title>
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <span>
+        <a href="#" class="logo">Angel-7</a>
+    </span>    <span>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Services</a>
+        <a href="#">Products</a>
+    </span>
+    <span>
+        <a href="#" class="right">Login</a>
+        <a href="#" class="right">Sign In</a>
+    </span>
+</nav>
+
+<div class="background-image">
+    <div class="overlay-image">
+        <img src="stock1.png" alt="Overlay Image">  
+        
+    </div>
+    <div class="title">
+        <h1>Easily invest in stocks and crypto in one <strong>Angel-7 platform</strong></h1>
+    </div>
+    <div class="title1">
+        <p>Get all the conveniences of investing in stocks or cryptocurrencies in one Angel-7 platform. Now you can use this app in desktop version</p>
+   </div>
+
+</div>
+<div class="grey-background">
+    <div class="logos-container">
+        <img src="logo1.png" alt="Logo 1">
+        <img src="logo2.png" alt="Logo 1">
+        <img src="logo3.png" alt="Logo 1">
+        <img src="logo4.png" alt="Logo 1">
+        <img src="logo5.png" alt="Logo 1">
+        <img src="logo6.png" alt="Logo 1">
+        
+        
+    </div>
+</div>
+<div class="services">
+    <div class="box1">
+        <div class="left-content">
+            <h1>Easily monitor stock movements on <strong>Angel-7</strong></h1>
+            <p>Monitor the stocks you are after in real time and of course easily and accurately</p>
+            <ol>
+                <li>Monitor stocks easily and accuratly</li>
+                <li>Get regular reports on the shares you own</li>
+            </ol>
+        </div>
+        <div class="right-content">
+            <img style="border-radius: 20px;" src="poster.jpg" alt="img">
+        </div>
+
+    </div>
+    <div class="box2">
+        <div class="right-content">
+            <img style="border-radius: 20px;width: 600px;" src="poster1.jpg" alt="img">
+        </div>
+        <div class="left-content">
+            <h1>
+                A wide variety of stocks from all over the world
+            </h1>
+            <ol>
+                <li>Starting from local stocks, US stocks you can find and you can buy here</li>
+                <li>You can buy international stocks easily and quickly only on Ang</li>
+            </ol>
+        </div>
+
+    </div>
+    <div></div>
+    
+</div>
+<div class="content">
+    <table>
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>OPEN</th>
+                <th>LOW</th>
+                <th>HIGH</th>
+                <th>CLOSE</th>
+                <th>VOLUME</th>
+                <th>PREDICT</th>
+
+
+            </tr>
+        </thead>
+        <tbody id="MyTable">
+            <tr>
+                <td>SBIN</td>
+                <td>703.6</td>
+                <td>694.20</td>
+                <td>728.35</td>
+                <td>694.20</td>
+                <td>43,235,061</td>
+                <td>  <button id="1">Chart</button></td>
+                    
+                
+            </tr>
+            <tr>
+                <td>HDFC</td>
+                <td>1,392.15</td>
+                <td>1,387.00</td>
+                <td>1,414.20</td>
+                <td>1,403.60</td>
+                <td>28,321,062</td>
+                <td><button id="2">Chart</button></td>
+                
+            </tr>
+            <tr>
+                <td>SUN PHARMA</td>
+                <td>1,500.90</td>
+                <td>1,492.25</td>
+                <td>1,539</td>
+                <td>1,534.80</td>
+                <td>6,343,881</td>
+                <td><button id="3">Chart</button></td>
+                
+            </tr>
+            
+        </tbody>
+    </table>
+</div>
+
+<script>
+    document.getElementById('1').addEventListener('click', function() {
+        // Open a new window or tab
+        var newWindow = window.open('', '_blank');
+        
+        // Add HTML content to the new window
+        newWindow.document.write(`
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Image Page</title>
+            </head>
+            <body>
+                <img height="600" src="SBI.jpg" alt="Image" >
+            </body>
+            </html>
+        `);
+
+        // Close the document to make sure it's rendered
+        newWindow.document.close();
+    });
+
+
+    document.getElementById('2').addEventListener('click', function() {
+        // Open a new window or tab
+        var newWindow = window.open('', '_blank');
+        
+        // Add HTML content to the new window
+        newWindow.document.write(`
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Image Page</title>
+            </head>
+            <body>
+                <img height="600" src="hdfC.jpg" alt="Image" >
+            </body>
+            </html>
+        `);
+
+        // Close the document to make sure it's rendered
+        newWindow.document.close();
+    });
+
+    document.getElementById('3').addEventListener('click', function() {
+        // Open a new window or tab
+        var newWindow = window.open('', '_blank');
+        
+        // Add HTML content to the new window
+        newWindow.document.write(`
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Image Page</title>
+            </head>
+            <body>
+                <img height="600" src="SUN.jpg" alt="Image" >
+            </body>
+            </html>
+        `);
+
+        // Close the document to make sure it's rendered
+        newWindow.document.close();
+    });
+
+</script>
+</body>
+</html>

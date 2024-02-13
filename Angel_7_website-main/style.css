@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar span a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar a.logo {
+    padding: 14px 16px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar a.right {
+    float: right;
+}
+
+.background-image {
+    background-image: linear-gradient(to bottom, #000080, #008b82); /* Navy Blue Gradient */
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 650px;
+    position: relative;
+    color: white;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 79%;
+    left: 18%;
+    width: max-content;
+    height: inherit;
+}
+
+.overlay-image img {
+    border-radius: 14px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.background-image h1 {
+    font-size: 50px;
+}
+
+.background-image h1 strong {
+    background: linear-gradient(to right, #007991, #78ffd6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.background-image p {
+    font-size: 18px;
+}
+
+.grey-background {
+    background-color: #f6f6f6;
+    padding: 20px;
+    display: flex;
+    align-items: end;
+    height: 570px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 950px;
+}
+.logos-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.logos-container img {
+    margin: 0 10px;
+    max-width: 130px;
+    max-height: 55px;
+}
+
+.services {
+    background-color: white;
+    height: 930px;
+    position: relative;
+}
+
+.box1 {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-top: 35px;
+
+}
+
+.box2 {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-top: 35px;
+
+}
+.left-content{
+    width: 500px;
+}
+.left-content h1 {
+    font-size: xxx-large;
+    color: black;
+    text-align: start;
+}
+.left-content h1 strong{
+    background: linear-gradient(to right, #007991, #78ffd6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.left-content p{
+    color: black;
+}
+.left-content ol{
+    color: black;
+}
+.right-content {
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.logos-container img {
+    width: 100px;
+    ;
+}
+
+.content{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: 200px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    margin: 30px auto;
+    width: 75%;
+    height: 550px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+   
+}
+thead{
+    font-size: 20px;
+}
+tbody{
+    font-size: 25px;
+}
+
+th, td {
+    
+    padding: 20px; /* Increase padding for better spacing */
+    text-align: left;
+}
+
+th {
+    background-color: #d8d8d8;
+}
+#priceData{
+    height: 488px;
+}
+button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+}
